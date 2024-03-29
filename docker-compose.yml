@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  memorydb.api:
+    image: ${DOCKER_REGISTRY-}memorydbapi
+    build:
+      context: .
+      dockerfile: MemoryDb.Api/Dockerfile
